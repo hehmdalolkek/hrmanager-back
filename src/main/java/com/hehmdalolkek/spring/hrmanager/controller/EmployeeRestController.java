@@ -1,6 +1,5 @@
 package com.hehmdalolkek.spring.hrmanager.controller;
 
-import com.hehmdalolkek.spring.hrmanager.entity.Department;
 import com.hehmdalolkek.spring.hrmanager.entity.Employee;
 import com.hehmdalolkek.spring.hrmanager.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin(origins = "https://hrmanager-front.onrender.com", value = "http://localhost:3000")
 @RequestMapping("/api")
 public class EmployeeRestController {
 

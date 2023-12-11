@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin(origins = "https://hrmanager-front.onrender.com", value = "http://localhost:3000")
 @RequestMapping("/api")
 public class DepartmentRestController {
 
